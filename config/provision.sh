@@ -10,7 +10,7 @@ sudo apt-get update
 sudo apt-get install tree
 
 # install mysql8
-if ! [ -e /vagrant/mysql-apt-config_0.8.15-1_all.deb ]; then
+if ! [ -e /jztwitter/mysql-apt-config_0.8.15-1_all.deb ]; then
 	wget -c https://dev.mysql.com/get/mysql-apt-config_0.8.15-1_all.deb
 fi
 
@@ -18,6 +18,7 @@ sudo dpkg -i mysql-apt-config_0.8.15-1_all.deb
 sudo DEBIAN_FRONTEND=noninteractivate apt-get install -y mysql-server
 sudo apt-get install -y libmysqlclient-dev
 
+# pip 3
 if [ ! -f "/usr/bin/pip" ]; then
   sudo apt-get install -y python3-pip
   sudo apt-get install -y python-setuptools
