@@ -1,2 +1,5 @@
 Miniconda3*.sh
 
+twitter/__pycache__/**
+twitter/.idea/**
+*.pyc
